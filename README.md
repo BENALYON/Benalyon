@@ -40,3 +40,39 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benalyon | Codex Repository</title>
+    <style>
+        :root {
+            --bg-deep: #0a0908;
+            --bg-surface: #141210;
+            --gold: #dfb15b;
+            --text-primary: #f5f2eb;
+            --border: #2d261f;
+        }
+        body { background-color: var(--bg-deep); color: var(--text-primary); font-family: sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; color: var(--gold); }
+        section { background: var(--bg-surface); border: 1px solid var(--border); padding: 2rem; margin-bottom: 2rem; }
+        .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .image-card img { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <header><h1>Benalyon</h1></header>
+    <div class="container">
+        <section id="visuals">
+            <h2>System Manifestation</h2>
+            <div class="image-gallery">
+                <div class="image-card"><img src="sigil.jpg" alt="Sigil"></div>
+                <div class="image-card"><img src="shepherd.jpg" alt="Shepherd"></div>
+                <div class="image-card"><img src="ascension.jpg" alt="Ascension"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
