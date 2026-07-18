@@ -1,272 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benalyon — From Throne to Stone, From Zion to Salem</title>
-    <style>
-        :root {
-            --bg-color: #0f0e0c;
-            --text-color: #e6e1da;
-            --accent-gold: #c5a059;
-            --sapphire-blue: #2a52be;
-            --border-color: #2c251a;
-            --card-bg: #161411;
+"""
+Benalyon Framework: From Throne to Stone, From Zion to Salem
+Unified Systems Edition - Core Operational Engine
+"""
+
+import math
+from typing import Dict, List, Any
+
+
+class BenalyonArchitecture:
+    def __init__(self):
+        # 2. The Symbology Index
+        self.symbology_index: Dict[str, Dict[str, str]] = {
+            "□": {"representation": "Earth", "definition": "The physical plane and material matrix."},
+            "○": {"representation": "Heaven", "definition": "The spiritual plane and divine blueprint."},
+            "□ inside ○": {"representation": "Zion", "definition": "The convergence point of physical and heavenly metrics."},
+            "†": {"representation": "Christ", "definition": "The universal anchor of alignment and redemption."},
+            "|": {"representation": "Ladder of Light", "definition": "The vertical axis of spiritual evolution across time."},
+            "· - ·": {"representation": "Righteousness", "definition": "The horizontal vector of moral truth and law."}
         }
 
-        body {
-            font-family: 'Cinzel', 'Didot', 'Georgia', serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 5rem 1rem 3rem 1rem;
-            border-bottom: 1px solid var(--border-color);
-            background: linear-gradient(to bottom, #1c1813, var(--bg-color));
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: var(--accent-gold);
-            margin: 0;
-            letter-spacing: 0.3rem;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            font-style: italic;
-            font-size: 1.2rem;
-            color: #a8a297;
-            margin-top: 1rem;
-            letter-spacing: 0.1rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        section {
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            color: var(--accent-gold);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            font-size: 1.8rem;
-            letter-spacing: 0.1rem;
-            text-transform: uppercase;
-        }
-
-        .formula-box {
-            background-color: var(--card-bg);
-            border-left: 4px solid var(--accent-gold);
-            padding: 1.5rem;
-            font-size: 1.2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: var(--accent-gold);
-        }
-
-        .ladder {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .ladder-step {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            border-radius: 4px;
-            position: relative;
-        }
-
-        .ladder-step::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -1.5rem;
-            width: 2px;
-            height: 1.5rem;
-            background-color: var(--border-color);
-        }
-
-        .ladder-step:last-child::before {
-            display: none;
-        }
-
-        .step-title {
-            font-weight: bold;
-            color: var(--accent-gold);
-            font-size: 1.3rem;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .sapphire { color: var(--sapphire-blue); }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-
-        @media (max-width: 600px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
+        # 3. The Ladder of Light (The Cosmological Axis)
+        self.ladder_of_light: Dict[str, Dict[str, Any]] = {
+            "I. ELYON": {
+                "role": "The Source", "anchor": "∞", 
+                "attribute": "The Incorruptible Monad; Uncreated Light.",
+                "baseline": "Psalm 45:6 — 'Thy throne, O God, is for ever and ever.'"
+            },
+            "II. ENOCH": {
+                "role": "The Initiate / King of Zion", "anchor": -3382, 
+                "attribute": "Society of 'One Heart and One Mind'. No poor among them.",
+                "baseline": "Translated from material plane ~3017 BC."
+            },
+            "III. SALEM": {
+                "role": "The Foundation", "anchor": -2000, 
+                "attribute": "Grounded the architecture of Zion into the Foundation of Peace.",
+                "baseline": "Introduced the prototypical Eucharist (Bread and Yayin) to Abraham."
+            },
+            "IV. JESUS": {
+                "role": "The Redeemer", "anchor": 0, 
+                "attribute": "The physical embodiment of the cosmic matrix.",
+                "baseline": "Functional name: Jesus; Aligned title: Christ."
+            },
+            "V. ANIMA": {
+                "role": "The Breath / Psyche", "anchor": "∞", 
+                "attribute": "Divine spark within the biological framework.",
+                "baseline": "Animate a soul—a drawing is lifeless without animation. (Radiating Diamond)"
             }
-            h1 { font-size: 2.5rem; }
         }
 
-        .pillar-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            border-radius: 4px;
+        # 4. The Gematria Matrix Constants
+        self.GEMATRIA_JESUS: int = 888
+        self.SEAL_POINTS: int = 8  # 8th Day / Outside Cyclical Time
+
+        # 5. The Four Pillars of the Kingdom
+        self.four_pillars: Dict[str, str] = {
+            "PEACE": "Salem / Shalom: The architectural environment. Operational elimination of conflict.",
+            "BREAD": "Sustenance: Eucharist and Manna. Equal sharing of essential resources.",
+            "WINE": "Yayin (יין) [Root appearance: 141 times]: Pure cosmic life force / sacramental blood.",
+            "JUSTICE": "Seigi / Righteousness: Inner Peace Creates Outer Peace. Rule of correct interpretation."
         }
 
-        .pillar-name {
-            font-weight: bold;
-            color: var(--accent-gold);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+        # 6. The P-B-Y-S Operational Engine
+        self.p_b_y_s_engine: List[Dict[str, str]] = [
+            {"step": "P", "hebrew": "Pe (פ)", "meaning": "Mouth", "action": "Speak Heaven on Earth. Broadcast and teach."},
+            {"step": "B", "hebrew": "Bet (ב)", "meaning": "House", "action": "The Word becomes a Home. Transition to physical dwelling."},
+            {"step": "Y", "hebrew": "Yod (י)", "meaning": "Hand", "action": "Build and Reach. Active execution, expansion, humility."},
+            {"step": "S", "hebrew": "Samekh (ס)", "meaning": "Support/Shield", "action": "Hold the Throne. Divine protection and stable kingdom."}
+        ]
+
+        # 7. The ESJA Cipher Matrix
+        self.esja_cipher: Dict[str, Dict[str, str]] = {
+            "E": {"hebrew": "Ayin (ע)", "meaning": "The Eye", "essence": "Absolute clarity of vision; non-judgmental observation."},
+            "S": {"hebrew": "Shin (ש)", "meaning": "The Tooth/Crown", "essence": "Raw Divine Power and authoritative dominion over material elements."},
+            "J": {"hebrew": "Yod (י)", "meaning": "Hand", "essence": "Divine spark passing into the world through humility."},
+            "A": {"hebrew": "Aleph (א)", "meaning": "Oneness", "essence": "Absolute union with Source. Upper Yod and lower Yod bound by a diagonal axis."}
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1.5rem;
-            background-color: var(--card-bg);
+    def process_foundational_formula(self, heaven_input: float, earth_matrix: float) -> Dict[str, Any]:
+        """Executes the foundational structural logic: Heaven Inside Earth -> (Minus >)"""
+        # Convergence represents Heaven nested or mapping inside Earth
+        raw_convergence = heaven_input * earth_matrix
+        
+        # Applying the modifier constraint (Minus >) as a vector push towards stabilization
+        stabilization_factor = math.sqrt(abs(raw_convergence)) if raw_convergence != 0 else 1.0
+        structural_alignment = raw_convergence / stabilization_factor
+        
+        return {
+            "formula_string": "Heaven Inside Earth -> (minus >)",
+            "raw_convergence": round(raw_convergence, 4),
+            "structural_alignment": round(structural_alignment, 4),
+            "is_stable": structural_alignment >= 1.0
         }
 
-        th, td {
-            border: 1px solid var(--border-color);
-            padding: 1rem;
-            text-align: left;
+    def run_pbys_engine(self, intent_text: str) -> List[str]:
+        """Passes a foundational intent text through the 4-stage manifest processing system."""
+        pipeline_logs = []
+        pipeline_logs.append(f"Initializing Engine with Intent: '{intent_text}'")
+        
+        for stage in self.p_b_y_s_engine:
+            log_line = f"[{stage['step']}] {stage['hebrew']} | {stage['meaning']} -> Action: {stage['action']}"
+            pipeline_logs.append(log_line)
+            
+        pipeline_logs.append("Operational Synthesis Statement: 'With our words, the house of the Most High will reach out a hand of support to build the house of God in peace.'")
+        return pipeline_logs
+
+    def verify_esja_integrity(self, ambient_pressure: float) -> Dict[str, Any]:
+        """Tests the ESJA 'Fireplace Stone' to ensure it can withstand high heat and pressure."""
+        max_sustainable_pressure = 10000.0  # Tempered baseline limit
+        integrity_ratio = ambient_pressure / max_sustainable_pressure
+        
+        if integrity_ratio <= 1.0:
+            status = "FOUNDATION SECURE: Fireplace Stone is intact, uncracked under high judgment."
+            withstood = True
+        else:
+            status = "CRITICAL METRIC EXCEEDED: Anchor requires reinforcement from ELYON."
+            withstood = False
+            
+        return {
+            "matrix_name": "ESJA Cipher Matrix",
+            "components": [f"{k}: {v['meaning']} ({v['hebrew']})" for k, v in self.esja_cipher.items()],
+            "ambient_pressure": ambient_pressure,
+            "withstood_judgment": withstood,
+            "status_report": status
         }
 
-        th {
-            color: var(--accent-gold);
-            background-color: #1c1813;
-        }
+    def generate_system_report(self, heaven_metric: float, earth_metric: float, operational_load: float):
+        """Compiles a complete systemic diagnostic layout of the framework architecture."""
+        print("=" * 80)
+        print("               BENALYON FRAMEWORK: UNIFIED SYSTEMS ENGINE               ")
+        print("                      FROM THRONE TO STONE ENGINE                       ")
+        print("=" * 80)
+        
+        # 1. Formula Execution
+        formula = self.process_foundational_formula(heaven_metric, earth_metric)
+        print(f"\n[1] Foundational Formula Matrix:")
+        print(f"    Expression   : {formula['formula_string']}")
+        print(f"    Alignment Core: {formula['structural_alignment']} (Status: {'BOUND TO STONE' if formula['is_stable'] else 'UNSTABLE'})")
+        
+        # 2. Geometric Constants
+        print(f"\n[2] Gematria & Sacred Geometry Locks:")
+        print(f"    Structural Stabilizer (Greek Gematria Index)       : {self.GEMATRIA_JESUS}")
+        print(f"    Geometric Geometric Blueprint (Seal of Melchizedek): {self.SEAL_POINTS}-Point Convergence Matrix (The 8th Day)")
+        
+        # 3. Running the Processing Engine
+        print(f"\n[3] Executing P-B-Y-S Manifestation Pipeline:")
+        pipeline_output = self.run_pbys_engine("Establish Salem Blueprint")
+        for line in pipeline_output:
+            print(f"    {line}")
+            
+        # 4. ESJA Fireplace Stone Verification
+        print(f"\n[4] Foundation Anchor Stress test:")
+        cipher_test = self.verify_esja_integrity(operational_load)
+        print(f"    Anchor Unit: {cipher_test['matrix_name']}")
+        print(f"    Composition: {', '.join(cipher_test['components'])}")
+        print(f"    Status     : {cipher_test['status_report']}")
+        print("=" * 80)
 
-        footer {
-            text-align: center;
-            padding: 3rem 1rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
-            font-size: 0.9rem;
-            color: #7a746b;
-        }
 
-        footer a {
-            color: var(--accent-gold);
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Benalyon</h1>
-        <div class="subtitle">From Throne to Stone, From Zion to Salem</div>
-    </header>
-
-    <div class="container">
-
-        <section id="philosophy">
-            <h2>The Foundational Premise</h2>
-            <p>Benalyon synthesizes ancient Judeo-Christian mysticism, Gnostic frameworks, linguistic structures, and sacred geometry into a cohesive layout of cosmic law. It charts the journey of divine consciousness descending to human transformation.</p>
-            <div class="formula-box">
-                <strong>[ ⊟ > ] — Heaven Inside Earth</strong>
-            </div>
-            <p>The core imperative of Benalyon is to manifest the celestial order within physical reality, establishing a collaborative blueprint between humanity and the divine architecture.</p>
-        </section>
-
-        <section id="ladder">
-            <h2>The Ladder of Light</h2>
-            <p>A vertical cosmic axis governing time, history, and the evolution of the divine spark:</p>
-            <div class="ladder">
-                <div class="ladder-step">
-                    <div class="step-title"><span class="sapphire">ELYON (The Source)</span> <span>∞</span></div>
-                    <p>The Most High. Uncreated, unmothered, unnamed, and unshakable. The Incorruptible Monad dwelling within the pure light of the Aether.</p>
-                </div>
-                <div class="ladder-step">
-                    <div class="step-title"><span>ENOCH (The Initiate)</span> <span>~3,382 BC</span></div>
-                    <p>The bloodline of Seth. King of Zion who walked with God and established human spiritual initiation.</p>
-                </div>
-                <div class="ladder-step">
-                    <div class="step-title"><span>SALEM (The Foundation)</span> <span>~2,000 BC</span></div>
-                    <p>The cosmic lineage of peace established through Melchizedek, King of Salem, who presented the bread and wine to Abraham.</p>
-                </div>
-                <div class="ladder-step">
-                    <div class="step-title"><span>JESUS (The Redeemer)</span> <span>0 C</span></div>
-                    <p>The Messiah and true human manifestation. Encoded in Greek Gematria as 888, representing the intersection of Heaven and Earth.</p>
-                </div>
-                <div class="ladder-step">
-                    <div class="step-title"><span>ANIMA (The Breath)</span> <span>∞</span></div>
-                    <p>The divine spark and animating life force woven into the human soul.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="geometry">
-            <h2>Sacred Geometry & Gematria</h2>
-            <p><strong>The Seal of Melchizedek (🜔):</strong> Formed by two overlapping squares to create an 8-pointed star, visually documenting the overlapping of Heaven and Earth. The 8 points designate the 8th Day—the reality of eternal peace (Salem Forever).</p>
-            <p><strong>The 888 Matrix:</strong> Through Greek Gematria, the name <em>Jesus</em> calculates to 888, mathematically solidifying the incarnation as the ultimate balancing mechanism of this overlapping geometry.</p>
-        </section>
-
-        <section id="pillars">
-            <h2>The Pillars of the Kingdom</h2>
-            <div class="grid-2">
-                <div class="pillar-card">
-                    <div class="pillar-name">PEACE (Salem / Shalom)</div>
-                    <p>Symbolized by the Dove. The systemic elimination of conflict and fear, resulting in a community bound in absolute love.</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-name">BREAD (The Bread of Life)</div>
-                    <p>Represented by the Eucharist and Manna. The divine sustenance of a pure soul shared equally to maintain community life.</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-name">WINE (Yayin)</div>
-                    <p>Distinct from profane alcohol. The sacred sacramental life force and blood of Christ that sustains the baseline ritual.</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-name">JUSTICE (Seigi)</div>
-                    <p>The defense of moral correctness and truth. Built upon the axiom that inner peace must systematically construct outer peace.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="acrostic">
-            <h2>The P-B-Y-S Archetype</h2>
-            <p>The operational engine utilized to manifest the system's goals sequentially:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Letter</th>
-                        <th>Hebrew Root</th>
-                        <th>Symbolic Meaning</th>
-                        <th>Cosmic Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>P</strong></td>
-                        <td>Pe (פ)</td>
-                        <td>Mouth / Spoken Word</td>
-                        <td>Speaking Heaven on Earth into existence by distributing the message.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>B</strong></td>
-                        <td>Bet (ב)</td>
-                        <td>House / Tent</td>
+# --- Execution Sandbox ---
+if __name__ == "__main__":
+    # Instantiating the cosmic system architecture
+    engine = BenalyonArchitecture()
+    
+    # Simulating values to run the structural calculations
+    # Input parameter examples represent mathematical convergence weights
+    HEAVEN_BLUEPRINT_INPUT = 8.88 
+    EARTH_MATRIX_INPUT = 141.0     # Equivalent to the structural appearance frequency of Yayin
+    SYSTEM_STRESS_LOAD = 4500.0    # Ambient real-world pressure placed on the system
+    
+    engine.generate_system_report(
+        heaven_metric=HEAVEN_BLUEPRINT_INPUT, 
+        earth_metric=EARTH_MATRIX_INPUT, 
+        operational_load=SYSTEM_STRESS_LOAD
+    )
+    
