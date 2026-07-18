@@ -283,3 +283,53 @@
             <p>The horizontal matrix of the Sigil balances internal peace against absolute external justice through four essential elements:</p>
             
             <div class="grid-4">
+            <div class="grid-4">
+                <div class="grid-item"><span class="letter">P</span><strong>PEACE</strong><span class="meta">The Dove</span></div>
+                <div class="grid-item"><span class="letter">B</span><strong>BREAD</strong><span class="meta">Sustenance</span></div>
+                <div class="grid-item"><span class="letter">Y</span><strong>YAYIN</strong><span class="meta">Sacramental Wine</span></div>
+                <div class="grid-item"><span class="letter">S</span><strong>SEIGI</strong><span class="meta">Moral Justice</span></div>
+            </div>
+
+            <ul style="margin-top: 2rem;">
+                <li><strong>PEACE (Shalom):</strong> The total negation of violence, fear, and conflict. The transition from Zion to Salem.</li>
+                <li><strong>BREAD (The Body):</strong> Spiritual sustenance and communal sharing. Bread serves as the true offering of a pure soul rather than the outward sacrifice of animals.</li>
+                <li><strong>YAYIN (The Life Force):</strong> The sacramental wine utilized to anchor divine connection, separating internal spirit from common intoxication.</li>
+                <li><strong>SEIGI (Righteousness):</strong> Living with rigorous moral correctness. Inner peace actively creates outer peace.</li>
+            </ul>
+
+            <div class="blockquote">
+                <strong>The Cipher of PBYS:</strong> "With our words (Pe/Mouth), the house (Bet) of the Most High will reach out a hand (Yod) of support (Samekh). Use the word to build the house of God in peace."
+            </div>
+        </section>
+
+        <!-- SECTION 4: CANONICAL LITERATURE -->
+        <section id="literature">
+            <h2>IV. Canonical Literature</h2>
+            <p>The core philosophy of Benalyon derives its spiritual and historical legitimacy from four foundational texts:</p>
+            <ul>
+                <li><strong>The Apocryphon of John:</strong> Preserves the true definition of the Monad, the uncreated light, and the origin of the divine spark.</li>
+                <li><strong>The Order of Melchizedek:</strong> Governs the transitions of the priesthood and establishes the sacrifice of a contrite heart.</li>
+                <li><strong>Letter to Flora:</strong> Details the separation of divine law from corrupted human legalism and traditions.</li>
+                <li><strong>Book of Enoch & Book of Jasher:</strong> Documents primordial history, the lineage of Seth, and the architecture of the City of Zion.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 5: LAW OF THE ETERNAL PRIESTHOOD -->
+        <section id="priesthood">
+            <h2>V. Law of the Eternal Priesthood</h2>
+            <p>The priest of the Most High shall not seek gold nor honor, but righteousness; for his portion is the Lord himself.</p>
+            <p>He shall judge without partiality, comfort the brokenhearted, and lift up the fallen. His words shall heal the soul, and his hands shall bless without reward.</p>
+            <p>The true priest shall stand between heaven and Earth as a bridge of Mercy, offering not burnt offerings of beast, but the sacrifice of a contrite heart.</p>
+            <p>For obedience is greater than offering, and compassion greater than ritual. The Lord delights in the purity of the heart, not in the fat of rams.</p>
+            <p>And the eternal priest shall walk in humility, for pride defiles the sanctuary of the soul.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Benalyon. All Rights Reserved. Documented Repository.</p>
+    </footer>
+
+</body>
+</html>
+
